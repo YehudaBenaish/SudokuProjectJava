@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="main" alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="10" style="-fx-background-color: #89CFF0; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sudokusolver.ui.LoginPageController">
+    <Label style="-fx-text-fill: #4169E1;" styleClass="label-title" text="SudokuSolver">
+      <font>
+         <Font name="System Bold Italic" size="36.0" />
+      </font></Label>
+   <HBox prefHeight="35.0" prefWidth="600.0" />
+   <VBox prefHeight="117.0" prefWidth="577.0">
+      <children>
+          <HBox alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="303.0" spacing="10.0">
+            <children>
+               <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="0.0" />
+                 <Label text="ID:">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+                 <TextField fx:id="idField" alignment="TOP_LEFT" prefHeight="31.0" prefWidth="240.0" style="-fx-background-radius: 15px;">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+            </children>
+          </HBox>
+         <HBox prefHeight="35.0" prefWidth="577.0" />
+          <HBox alignment="CENTER" spacing="10.0">
+              <Label text="Password:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+              <PasswordField fx:id="passwordField" alignment="TOP_LEFT" prefHeight="31.0" prefWidth="240.0" style="-fx-background-radius: 15px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="41.0" />
+          </HBox>
+      </children>
+   </VBox>
+   <HBox prefHeight="45.0" prefWidth="600.0" />
+    <HBox spacing="10.0">
+        <Button onAction="#handleLogin" prefWidth="120.0" style="-fx-background-radius: 15px; -fx-background-color: #FF7F50;" text="Login">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="37.0" />
+        <Button onAction="#handleRegistration" prefWidth="120.0" style="-fx-background-radius: 15px; -fx-background-color: #FF7F50;" text="Registration">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <VBox.margin>
+         <Insets left="150.0" right="150.0" />
+      </VBox.margin>
+    </HBox>
+    <Label fx:id="messageLabel" textFill="red" />
+</VBox>

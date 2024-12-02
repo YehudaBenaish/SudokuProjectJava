@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="10" style="-fx-background-color: #89CFF0; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sudokusolver.ui.HomePageController">
+    <Label style="-fx-text-fill: #4169E1;" styleClass="label-title" text="SudokuSolver">
+      <font>
+         <Font name="System Bold Italic" size="36.0" />
+      </font>
+   </Label>
+   <HBox prefHeight="25.0" prefWidth="600.0" />
+    <Label fx:id="welcomeLabel" styleClass="label-subtitle" text="Hello, username, good to see you!">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <HBox prefHeight="41.0" prefWidth="600.0" />
+    <Button onAction="#handleSolveSudoku" prefHeight="40.0" prefWidth="220.0" style="-fx-background-radius: 15px; -fx-background-color: #FF7F50;" text="Solving a new Sudoku">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Button>
+    <Button onAction="#handleRecentSolve" prefHeight="40.0" prefWidth="220.0" style="-fx-background-radius: 15px; -fx-background-color: #FF7F50;" text="A recently solved solution">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Button>
+    <Button onAction="#handleExit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-radius: 15px; -fx-background-color: #FF7F50;" text="Exit">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Button>
+</VBox>

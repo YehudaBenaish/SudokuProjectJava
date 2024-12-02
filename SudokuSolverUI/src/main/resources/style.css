@@ -1,0 +1,25 @@
+.label-title {
+    -fx-font-size: 48px;
+    -fx-text-fill: #333;
+}
+
+.sudoku-grid {
+    -fx-padding: 20;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.sudoku-cell {
+    -fx-font-size: 14px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-alignment: center;
+    -fx-border-color: #999;
+    -fx-border-width: 1;
+}
+
+
+.vbox {
+    -fx-padding: 20px;
+}
